@@ -31,7 +31,7 @@ export class EditComponent implements OnInit {
 		});
 	}
 
-	updateUser(user_ID, user_name) {
+	updateUser(user_ID:Number, user_name: String) {
 		this.route.params.subscribe(params => {
 		   this.userService.updateUser(user_ID, user_name, params['id']);
 		});

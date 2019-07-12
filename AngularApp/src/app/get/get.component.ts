@@ -15,13 +15,14 @@ export class GetComponent implements OnInit {
 	}
 
 	ngOnInit() {
-		this.userService.getUsers().subscribe((data: User[]) => {this.users = data;});
+		this.userService.getUsers().subscribe((res: User[]) => {this.users = res;});
 	}
 
   	deleteUser(id) {
 		this.userService.deleteUser(id).subscribe(res => {
 			console.log('Deleted');
-			this.userService.getUsers().subscribe((data: User[]) => {this.users = data;});
+			//When an user is deleted, refresh all users.
+			this.userService.getUsers().subscribe((res: User[]) => {this.users = res;});
 		});
 	}
 

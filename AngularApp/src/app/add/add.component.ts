@@ -9,19 +9,19 @@ import { UserService } from '../user.service';
 })
 export class AddComponent implements OnInit {
 
-  angForm: FormGroup;
-  constructor(private fb: FormBuilder, private userService: UserService) {
+	angForm: FormGroup;
+	constructor(private fb: FormBuilder, private userService: UserService) {
 		this.createForm();
-  }
+	}
 
-  createForm() {
-	this.angForm = this.fb.group({
-		user_ID: ['', Validators.required ],
-		user_name: ['', Validators.required ]
-	});
-  }
+  	createForm() {
+		this.angForm = this.fb.group({
+			user_ID: ['', Validators.required ],
+			user_name: ['', Validators.required ]
+		});
+  	}
 
-	addUser(user_ID, user_name) {
+	addUser(user_ID: Number, user_name: String) {
 		this.userService.addUser(user_ID, user_name);
 	}
 

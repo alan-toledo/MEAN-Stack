@@ -16,7 +16,10 @@ export class UserService {
 			user_ID: user_ID,
 			user_name: user_name
 		};
-    	this.http.post(this.BASE_URL + '/user/add',obj).subscribe(res => console.log(res, 'Done'));
+		this.http.post(this.BASE_URL + '/user/add',obj).subscribe(res => {
+			console.log(res, 'Done')
+			this.router.navigate(['/']);
+		});
   	}
 
   	getUsers() {return this.http.get(this.BASE_URL + '/user/');}

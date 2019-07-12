@@ -6,7 +6,7 @@ import { GetComponent } from './get/get.component';
 
 const routes: Routes = [
   {
-    path: 'user/create',
+	path: 'user/create',
     component: AddComponent
   },
   {
