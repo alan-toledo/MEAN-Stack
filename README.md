@@ -18,6 +18,6 @@ npm install on folder NodeJS
 npm install on folder AngularApp
 
 ##  Run servers
-nodemon serve on folder NodeJS
+nodemon server on folder NodeJS
 
 ng serve on folder AngularApp
