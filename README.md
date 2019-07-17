@@ -13,9 +13,11 @@ Angular (8.1.1)
 Node.js (10.16.0)
 
 ## Install
-npm install on folder NodeJS
+`npm install` -g nodemon
 
-npm install on folder AngularApp
+`npm install` on folder NodeJS
+
+`npm install` on folder AngularApp
 
 ##  Run servers
 `nodemon server` on folder NodeJS
