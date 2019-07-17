@@ -3,7 +3,7 @@ MongoDB, Express, Angular, Node.js
 
 Basic MEAN Stack CRUD.
 
-## Requeriments
+## Version
 MongoDB (4.0.10)
 
 Express (4.17.1) 
