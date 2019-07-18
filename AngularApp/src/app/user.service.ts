@@ -31,12 +31,12 @@ export class UserService {
 			user_ID: user_ID,
 			user_name: user_name
 		};
-		this.http.post(this.BASE_URL + '/user/update/' + id, obj).subscribe(res => {
+		this.http.put(this.BASE_URL + '/user/update/' + id, obj).subscribe(res => {
 			console.log('Done')
 			this.router.navigate(['user']);
 		});
 	}
 	deleteUser(id) {
-		return this.http.get(this.BASE_URL + '/user/delete/' + id);
+		return this.http.delete(this.BASE_URL + '/user/delete/' + id);
 	}
 }

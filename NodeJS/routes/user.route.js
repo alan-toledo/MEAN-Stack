@@ -33,7 +33,7 @@ userRoutes.route('/edit/:id').get(function (req, res) {
 	});
 });
 
-userRoutes.route('/update/:id').post(function (req, res) {
+userRoutes.route('/update/:id').put(function (req, res) {
 	User.findById(req.params.id, function(err, user) {
 		if (!user)
 			res.status(400).send('Could not load Document');
@@ -50,7 +50,7 @@ userRoutes.route('/update/:id').post(function (req, res) {
 	});
 });
 
-userRoutes.route('/delete/:id').get(function (req, res) {
+userRoutes.route('/delete/:id').delete(function (req, res) {
     User.findByIdAndRemove({_id: req.params.id}, function(err, user){
 		if(err) res.json(err);
         else res.json('Successfully removed');
