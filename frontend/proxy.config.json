@@ -1,0 +1,7 @@
+{
+    "/nodejs/*": {
+      "target": "http://nodejs:3000/",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }

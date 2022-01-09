@@ -1,0 +1,3 @@
+# AngularApp
+
+npm start
