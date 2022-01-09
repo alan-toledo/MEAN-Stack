@@ -17,6 +17,11 @@ docker-compose -f docker-compose.yml up
 docker-compose -f docker-compose.yml down
 ```
 
+## Clean: Delete all containers
+```bash
+docker rm -f $(docker ps -a -q)
+```
+
 ## Clean: Delete all images
 ```bash
 docker rmi -f $(docker images -aq)
