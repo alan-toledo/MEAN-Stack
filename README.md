@@ -28,4 +28,4 @@ docker volume rm $(docker volume ls -q)
 ```
 
 ## Example
-[Screenshot](Users.png)
+![alt text](Users.png)
